@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Julius+Sans+One" rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+  <script src="script.js"></script>
+  <!-- <script src="clipboard/dist/clipboard.min.js"></script> -->
+  <title>Jeff Helwig</title>
+</head>
+<body>
+  <div class='wrapper'>
+<!-- Header -->
+
+      <div class='absolute'>
+        <span class="logo"><button data-clipboard-text="jeff.helwig@gmail.com">J Helwig</button></span>
+        <div class="left-button">
+          <a href="https://www.linkedin.com/in/jeffhelwig/"><img src="img/in-White-34px-R.png"></a>
+          <a href="https://github.com/jlhelwig"><img src="img/GitHub-Mark-Light-32px.png"></a>
+        </div>
+      </div>
+        <div class='head-left'>
+          <div class='title'>
+            <div><p id='name'>Jeff Helwig </p></div>
+            <div id='title'>software developer</div>
+          </div>
+        </div>
+        <div class='head-right'>
+          <ul>
+            <li><a href='#words'>about</a></li>
+            <li><a href='#project'>projects</a></li>
+            <li><a href='https://medium.com/@jeff.helwig'>blog</a></li>
+            <li><button id='btn' data-clipboard-text="jeff.helwig@gmail.com">contact</button></li>
+          </ul>
+        </div>
+<!-- Hero -->
+      <!-- <div class='body-wrapper'> -->
+        <div class='hero' id='words'><p>I am a full stack web-developer with an extensive business background.</p>
+          <p>I love to learn, and I love working with a group toward a common goal.</p>
+          <!-- <div>I have built and been part of several top-notch business groups.</div> -->
+
+        </div>
+          <!-- <div class='project-wrapper'> -->
+            <div class='project-top-left hover' id='project'>
+              <a href='https://twitter.com/e_coliform'>
+                <img src="img/twitterbot.png" width=300px height=225px alt='nope!'>
+              </a>
+            </div>
+            <div class='project-top-right hover'>
+              <a href='https://midpoint-center.herokuapp.com/'>
+                <img src="img/midpoint.png" width=300px height=225px alt='nope!'>
+              </a>
+            </div>
+            <div class='project-bottom-left hover'>
+              <a href='https://github.com/jlhelwig/blackjackgame'>
+                <img src="img/safeswimaustin.png" width=300px height=225px alt='did not work'>
+              </a>
+            </div>
+            <div class='project-bottom-right hover'>
+              <a href='https://github.com/jlhelwig/blackjackgame'>
+                <img src="img/blackjack.png" width=300px height=225px alt='did not work'>
+              </a>
+            </div>
+
+
+        <!-- </div> -->
+      <!-- </div> -->
+<!-- Footer -->
+
+      <div class='footer'>
+        <div>&copy;Jeff Helwig, </div>
+        <div>Built with CSS Grid</div>
+      </div>
+</div>
+<script>
+    var btns = document.querySelectorAll('button');
+    var clipboard = new Clipboard(btns);
+    clipboard.on('success', function(e) {
+      alert("Jeff's email copied to your clipboard!")
+        console.log(e);
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+</script>
+</body>
+</html>
