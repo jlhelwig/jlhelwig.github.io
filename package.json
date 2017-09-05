@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jlhelwig/jlhelwig.github.io/issues"
   },
-  "homepage": "https://github.com/jlhelwig/jlhelwig.github.io#readme"
+  "homepage": "https://github.com/jlhelwig/jlhelwig.github.io#readme",
+  "dependencies": {
+    "optimizely-server-sdk": "^1.4.0"
+  }
 }
